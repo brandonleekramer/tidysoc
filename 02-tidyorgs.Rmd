@@ -1,0 +1,20 @@
+# tidyorgs {#cross}
+
+
+
+## Organizational Analysis
+
+### detect_academic()
+
+### detect_business()
+
+### detect_government()
+
+### detect_nonprofit()
+
+### detect_funders()
+
+## Sector Classification
+
+### sector_detector() 
+

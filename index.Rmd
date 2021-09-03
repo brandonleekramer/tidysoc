@@ -1,0 +1,35 @@
+--- 
+title: "tidysocial: Tools for Computational Text Anaylsis in the Social Sciences"
+author: "Brandon L. Kramer"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+# url: your book url like https://bookdown.org/yihui/bookdown
+# cover-image: path to the social sharing image like images/cover.jpg
+description: |
+  This is the documentation website for the tidysocial package. The package provides 
+  various functions to standardize messy text data for demographic, geographic, and 
+  organizational analysis.  
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+---
+
+# Preface
+
+This is the documentation website for the `tidysocial` meta-package. `tidysocial` provides various tools for detecting trends and standardizing demographic, geographic, and organizational categories in messy text data. While these tools were designed for social scientists, researchers, developers, and even entrepreneurs from a variety of backgrounds are likely to find these tools helpful in their day-to-day work flows. 
+
+## Package Overview 
+
+Each chapter covers a different package of the `tidysocial` meta-package. In the first chapter, we cover `tidyorgs` - a package designed to detect and standardize academic, business, government and nonprofit institutions for sector classification, joining data sets, and other forms of organizational analysis. In the second chapter, we go into the `identidy` package. This software was designed to find skills and credentials for occupational research as well as relational factors about the social people have. In the third chapter, we detail `diverstidy`, which shares a number of functions for detecting terms like race, gender and other forms of diversity. The package also provides tools for detecting geographic areas and the populations that inhabit those areas, providing a natural extension for standardizing demographic categories in text data. In the final chapter, we outline `tidyoss`. This package was developed to detect various kinds of software types - mainly for economists to evaluate the various uses, impacts, and cost estimates of those software tools. Each chapter not only provides brief descriptions of the functions included in each package, the data and references that contributed to developing them, and several uses cases for how they might be used. The three main uses cases explored are (1) detection and standardization of academic institutions in GitHub data, (2) changes in various forms of diversity in biomedical literature over time, and (3) analysis of software types using GitHub README data.
+
+## Documentation Structure 
+
+## Acknowledgements & Funding 
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```
