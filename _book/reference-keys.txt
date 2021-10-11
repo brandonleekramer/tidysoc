@@ -25,9 +25,8 @@ detect_us_states
 population-labeling
 identidy
 awards-accolades
-degrees-titles
+degrees-titles-occupations
 skills-certifications
-titles-occupations
 roles-relations
 tidyoss
 application-software

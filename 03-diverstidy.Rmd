@@ -22,6 +22,25 @@ detect_socialclass_terms()
 
 ### detect_countries() 
 
+Sources for output parameters:
+
+1. `country`: Country names based on International Organization for Standardization with all punctuation removed to allow names to be more readable ([ISO](https://www.iso.org/obp/ui/#home)).
+2. `iso_2`: International Organization for Standardization's two-digit country codes ([ISO](https://www.iso.org/obp/ui/#home)). NOTE: The [CIA World Factbook](https://www.cia.gov/the-world-factbook/references/country-data-codes/) uses a Geopolitical Entities and Codes (GEC) (Formerly FIPS 1PUB 10-4) schema that is now based on the ISO-2. 
+3. `iso_3`: International Organization for Standardization's three-digit country codes ([ISO](https://www.iso.org/obp/ui/#home)). NOTE: The [CIA World Factbook](https://www.cia.gov/the-world-factbook/references/country-data-codes/) uses a Letter Codes for Geographical Entities Standardization Agreement (STANAG) that is based on the ISO-3. 
+4. `iso_numeric`: International Organization for Standardization's three-digit numeric codes ([ISO](https://www.iso.org/obp/ui/#home)) NOTE: The [United Nations](https://unstats.un.org/unsd/methodology/m49/) also uses the ISO numeric code as their M49 area codes.
+5. `iso_domain`: International Organization for Standardization's three-digit numeric codes ([ISO](https://www.iso.org/obp/ui/#home))
+6. `continent`: Continents that each country is located based onon International Organization for Standardization ([ISO](https://www.iso.org/obp/ui/#home)).
+7. `region`: Regions each country are in based on the [United Nations' M49 classification](https://unstats.un.org/unsd/methodology/m49/). 
+8. `sub_region`: Subregions each country are in based on the [United Nations' M49 classification](https://unstats.un.org/unsd/methodology/m49/).
+9. `int_region`: Intermediary regions each country are in based on the [United Nations' M49 classification](https://unstats.un.org/unsd/methodology/m49/).
+10. `country_english`: Country names based verbatim on International Organization for Standardization ([ISO](https://www.iso.org/obp/ui/#home)).
+11. `country_chinese`: Country names in Chinese as translated by the [United Nations](https://unstats.un.org/unsd/methodology/m49/).  
+12. `country_russian`: Country names in Russian as translated by the [United Nations](https://unstats.un.org/unsd/methodology/m49/). 
+13. `country_french`: Country names in French as translated by the [United Nations](https://unstats.un.org/unsd/methodology/m49/). 
+14. `country_spanish`: Country names in Spanish as translated by the [United Nations](https://unstats.un.org/unsd/methodology/m49/). 
+15. `country_arabic`: Country names in Arabic as translated by the [United Nations](https://unstats.un.org/unsd/methodology/m49/). 
+16. `latitude` and `longitude`: Averaged latitude and longitude taken from [Gapminder](https://www.gapminder.org/data/geo/)
+
 ### detect_us_states() 
 
 ## Population Labeling 
