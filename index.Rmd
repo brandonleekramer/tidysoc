@@ -15,6 +15,10 @@ link-citations: yes
 github-repo: rstudio/bookdown-demo
 ---
 
+<center>
+[insert image here]
+</center>
+
 # Preface
 
 This is the documentation website for the `tidysocial` meta-package. `tidysocial` provides various tools for detecting trends and standardizing demographic, geographic, and organizational categories in messy text data. While these tools were designed for social scientists, researchers, developers, and even entrepreneurs from a variety of backgrounds are likely to find these tools helpful in their day-to-day work flows. 

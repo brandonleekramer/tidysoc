@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 5 identidy | tidysocial: Tools for Computational Text Anaylsis in the Social Sciences</title>
+  <title>Chapter 4 The diverstidy package | tidysocial: Tools for Computational Text Anaylsis in the Social Sciences</title>
   <meta name="description" content="This is the documentation website for the tidysocial package. The package provides
 various functions to standardize messy text data for demographic, geographic, and
 organizational analysis.<br />" />
   <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 5 identidy | tidysocial: Tools for Computational Text Anaylsis in the Social Sciences" />
+  <meta property="og:title" content="Chapter 4 The diverstidy package | tidysocial: Tools for Computational Text Anaylsis in the Social Sciences" />
   <meta property="og:type" content="book" />
   
   
@@ -20,7 +20,7 @@ organizational analysis.<br />" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 5 identidy | tidysocial: Tools for Computational Text Anaylsis in the Social Sciences" />
+  <meta name="twitter:title" content="Chapter 4 The diverstidy package | tidysocial: Tools for Computational Text Anaylsis in the Social Sciences" />
   
   <meta name="twitter:description" content="This is the documentation website for the tidysocial package. The package provides
 various functions to standardize messy text data for demographic, geographic, and
@@ -37,8 +37,8 @@ organizational analysis.<br />" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="diverstidy.html"/>
-<link rel="next" href="tidyoss.html"/>
+<link rel="prev" href="cross.html"/>
+<link rel="next" href="identidy.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -137,52 +137,37 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">tidysocial</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> url: your book url like <span>https://bookdown.org/yihui/bookdown</span></a><ul>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Preface</a><ul>
 <li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#package-overview"><i class="fa fa-check"></i><b>1.1</b> Package Overview</a></li>
 <li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#documentation-structure"><i class="fa fa-check"></i><b>1.2</b> Documentation Structure</a></li>
 <li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#acknowledgements-funding"><i class="fa fa-check"></i><b>1.3</b> Acknowledgements &amp; Funding</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="tidysocial.html"><a href="tidysocial.html"><i class="fa fa-check"></i><b>2</b> tidysocial</a><ul>
-<li class="chapter" data-level="2.1" data-path="tidysocial.html"><a href="tidysocial.html#use-cases"><i class="fa fa-check"></i><b>2.1</b> Use Cases</a></li>
+<li class="chapter" data-level="2.1" data-path="tidysocial.html"><a href="tidysocial.html#motivation"><i class="fa fa-check"></i><b>2.1</b> Motivation</a></li>
 <li class="chapter" data-level="2.2" data-path="tidysocial.html"><a href="tidysocial.html#potential-users"><i class="fa fa-check"></i><b>2.2</b> Potential Users</a></li>
-<li class="chapter" data-level="2.3" data-path="tidysocial.html"><a href="tidysocial.html#funneling-mechanism"><i class="fa fa-check"></i><b>2.3</b> Funneling Mechanism</a></li>
+<li class="chapter" data-level="2.3" data-path="tidysocial.html"><a href="tidysocial.html#potential-use-cases"><i class="fa fa-check"></i><b>2.3</b> Potential Use Cases</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="tidyorgs.html"><a href="tidyorgs.html"><i class="fa fa-check"></i><b>3</b> tidyorgs</a><ul>
-<li class="chapter" data-level="3.1" data-path="tidyorgs.html"><a href="tidyorgs.html#organizational-analysis"><i class="fa fa-check"></i><b>3.1</b> Organizational Analysis</a><ul>
-<li class="chapter" data-level="3.1.1" data-path="tidyorgs.html"><a href="tidyorgs.html#detect_orgs"><i class="fa fa-check"></i><b>3.1.1</b> <code>detect_orgs()</code></a></li>
-<li class="chapter" data-level="3.1.2" data-path="tidyorgs.html"><a href="tidyorgs.html#detect_academic"><i class="fa fa-check"></i><b>3.1.2</b> <code>detect_academic()</code></a></li>
-<li class="chapter" data-level="3.1.3" data-path="tidyorgs.html"><a href="tidyorgs.html#detect_business"><i class="fa fa-check"></i><b>3.1.3</b> <code>detect_business()</code></a></li>
-<li class="chapter" data-level="3.1.4" data-path="tidyorgs.html"><a href="tidyorgs.html#detect_government"><i class="fa fa-check"></i><b>3.1.4</b> <code>detect_government()</code></a></li>
-<li class="chapter" data-level="3.1.5" data-path="tidyorgs.html"><a href="tidyorgs.html#detect_nonprofit"><i class="fa fa-check"></i><b>3.1.5</b> <code>detect_nonprofit()</code></a></li>
-<li class="chapter" data-level="3.1.6" data-path="tidyorgs.html"><a href="tidyorgs.html#detect_household"><i class="fa fa-check"></i><b>3.1.6</b> <code>detect_household()</code></a></li>
+<li class="chapter" data-level="3" data-path="cross.html"><a href="cross.html"><i class="fa fa-check"></i><b>3</b> tidyorgs</a><ul>
+<li class="chapter" data-level="3.1" data-path="cross.html"><a href="cross.html#organizational-analysis"><i class="fa fa-check"></i><b>3.1</b> Organizational Analysis</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="cross.html"><a href="cross.html#detect_academic"><i class="fa fa-check"></i><b>3.1.1</b> detect_academic()</a></li>
+<li class="chapter" data-level="3.1.2" data-path="cross.html"><a href="cross.html#detect_business"><i class="fa fa-check"></i><b>3.1.2</b> detect_business()</a></li>
+<li class="chapter" data-level="3.1.3" data-path="cross.html"><a href="cross.html#detect_government"><i class="fa fa-check"></i><b>3.1.3</b> detect_government()</a></li>
+<li class="chapter" data-level="3.1.4" data-path="cross.html"><a href="cross.html#detect_nonprofit"><i class="fa fa-check"></i><b>3.1.4</b> detect_nonprofit()</a></li>
+<li class="chapter" data-level="3.1.5" data-path="cross.html"><a href="cross.html#detect_funders"><i class="fa fa-check"></i><b>3.1.5</b> detect_funders()</a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="tidyorgs.html"><a href="tidyorgs.html#funding-analysis"><i class="fa fa-check"></i><b>3.2</b> Funding Analysis</a><ul>
-<li class="chapter" data-level="3.2.1" data-path="tidyorgs.html"><a href="tidyorgs.html#detect_funders"><i class="fa fa-check"></i><b>3.2.1</b> <code>detect_funders()</code></a></li>
+<li class="chapter" data-level="3.2" data-path="cross.html"><a href="cross.html#sector-classification"><i class="fa fa-check"></i><b>3.2</b> Sector Classification</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="cross.html"><a href="cross.html#sector_detector"><i class="fa fa-check"></i><b>3.2.1</b> sector_detector()</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="diverstidy.html"><a href="diverstidy.html"><i class="fa fa-check"></i><b>4</b> diverstidy</a><ul>
-<li class="chapter" data-level="4.1" data-path="diverstidy.html"><a href="diverstidy.html#demographic-analysis"><i class="fa fa-check"></i><b>4.1</b> Demographic Analysis</a><ul>
-<li class="chapter" data-level="4.1.1" data-path="diverstidy.html"><a href="diverstidy.html#detect_ancestry_terms"><i class="fa fa-check"></i><b>4.1.1</b> <code>detect_ancestry_terms()</code></a></li>
-<li class="chapter" data-level="4.1.2" data-path="diverstidy.html"><a href="diverstidy.html#detect_cultural_terms"><i class="fa fa-check"></i><b>4.1.2</b> <code>detect_cultural_terms()</code></a></li>
-<li class="chapter" data-level="4.1.3" data-path="diverstidy.html"><a href="diverstidy.html#detect_disability_terms"><i class="fa fa-check"></i><b>4.1.3</b> <code>detect_disability_terms()</code></a></li>
-<li class="chapter" data-level="4.1.4" data-path="diverstidy.html"><a href="diverstidy.html#detect_diversity_terms"><i class="fa fa-check"></i><b>4.1.4</b> <code>detect_diversity_terms()</code></a></li>
-<li class="chapter" data-level="4.1.5" data-path="diverstidy.html"><a href="diverstidy.html#detect_equity_terms"><i class="fa fa-check"></i><b>4.1.5</b> <code>detect_equity_terms()</code></a></li>
-<li class="chapter" data-level="4.1.6" data-path="diverstidy.html"><a href="diverstidy.html#detect_justice_terms"><i class="fa fa-check"></i><b>4.1.6</b> <code>detect_justice_terms()</code></a></li>
-<li class="chapter" data-level="4.1.7" data-path="diverstidy.html"><a href="diverstidy.html#detect_lifecourse_terms"><i class="fa fa-check"></i><b>4.1.7</b> <code>detect_lifecourse_terms()</code></a></li>
-<li class="chapter" data-level="4.1.8" data-path="diverstidy.html"><a href="diverstidy.html#detect_migration_terms"><i class="fa fa-check"></i><b>4.1.8</b> <code>detect_migration_terms()</code></a></li>
-<li class="chapter" data-level="4.1.9" data-path="diverstidy.html"><a href="diverstidy.html#detect_minority_terms"><i class="fa fa-check"></i><b>4.1.9</b> <code>detect_minority_terms()</code></a></li>
-<li class="chapter" data-level="4.1.10" data-path="diverstidy.html"><a href="diverstidy.html#detect_racialethnic_terms"><i class="fa fa-check"></i><b>4.1.10</b> <code>detect_racialethnic_terms()</code></a></li>
-<li class="chapter" data-level="4.1.11" data-path="diverstidy.html"><a href="diverstidy.html#detect_religious_terms"><i class="fa fa-check"></i><b>4.1.11</b> <code>detect_religious_terms()</code></a></li>
-<li class="chapter" data-level="4.1.12" data-path="diverstidy.html"><a href="diverstidy.html#detect_sexgender_terms"><i class="fa fa-check"></i><b>4.1.12</b> <code>detect_sexgender_terms()</code></a></li>
-<li class="chapter" data-level="4.1.13" data-path="diverstidy.html"><a href="diverstidy.html#detect_sexuality_terms"><i class="fa fa-check"></i><b>4.1.13</b> <code>detect_sexuality_terms()</code></a></li>
-<li class="chapter" data-level="4.1.14" data-path="diverstidy.html"><a href="diverstidy.html#detect_socialclass_terms"><i class="fa fa-check"></i><b>4.1.14</b> <code>detect_socialclass_terms()</code></a></li>
+<li class="chapter" data-level="4" data-path="the-diverstidy-package.html"><a href="the-diverstidy-package.html"><i class="fa fa-check"></i><b>4</b> The <code>diverstidy</code> package</a><ul>
+<li class="chapter" data-level="4.1" data-path="the-diverstidy-package.html"><a href="the-diverstidy-package.html#demographic-diversity"><i class="fa fa-check"></i><b>4.1</b> Demographic Diversity</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="the-diverstidy-package.html"><a href="the-diverstidy-package.html#detect_ancestry_terms"><i class="fa fa-check"></i><b>4.1.1</b> <code>detect_ancestry_terms()</code></a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="diverstidy.html"><a href="diverstidy.html#geographic-analysis"><i class="fa fa-check"></i><b>4.2</b> Geographic Analysis</a><ul>
-<li class="chapter" data-level="4.2.1" data-path="diverstidy.html"><a href="diverstidy.html#detect_countries"><i class="fa fa-check"></i><b>4.2.1</b> <code>detect_countries()</code></a></li>
+<li class="chapter" data-level="4.2" data-path="the-diverstidy-package.html"><a href="the-diverstidy-package.html#geographic-analysis"><i class="fa fa-check"></i><b>4.2</b> Geographic Analysis</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="the-diverstidy-package.html"><a href="the-diverstidy-package.html#detect_countries"><i class="fa fa-check"></i><b>4.2.1</b> detect_countries()</a></li>
+<li class="chapter" data-level="4.2.2" data-path="the-diverstidy-package.html"><a href="the-diverstidy-package.html#detect_us_states"><i class="fa fa-check"></i><b>4.2.2</b> detect_us_states()</a></li>
 </ul></li>
-<li class="chapter" data-level="4.3" data-path="diverstidy.html"><a href="diverstidy.html#population-labeling"><i class="fa fa-check"></i><b>4.3</b> Population Labeling</a><ul>
-<li class="chapter" data-level="4.3.1" data-path="diverstidy.html"><a href="diverstidy.html#detect_human_terms"><i class="fa fa-check"></i><b>4.3.1</b> <code>detect_human_terms()</code></a></li>
-</ul></li>
+<li class="chapter" data-level="4.3" data-path="the-diverstidy-package.html"><a href="the-diverstidy-package.html#population-labeling"><i class="fa fa-check"></i><b>4.3</b> Population Labeling</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="identidy.html"><a href="identidy.html"><i class="fa fa-check"></i><b>5</b> identidy</a><ul>
 <li class="chapter" data-level="5.1" data-path="identidy.html"><a href="identidy.html#awards-accolades"><i class="fa fa-check"></i><b>5.1</b> Awards &amp; Accolades</a></li>
@@ -218,23 +203,59 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="identidy" class="section level1">
-<h1><span class="header-section-number">Chapter 5</span> identidy</h1>
-<center>
-<p>[insert image here]</p>
-Documentation coming soon
-</center>
-<div id="awards-accolades" class="section level2">
-<h2><span class="header-section-number">5.1</span> Awards &amp; Accolades</h2>
+<div id="the-diverstidy-package" class="section level1">
+<h1><span class="header-section-number">Chapter 4</span> The <code>diverstidy</code> package</h1>
+<div id="demographic-diversity" class="section level2">
+<h2><span class="header-section-number">4.1</span> Demographic Diversity</h2>
+<div id="detect_ancestry_terms" class="section level3">
+<h3><span class="header-section-number">4.1.1</span> <code>detect_ancestry_terms()</code></h3>
+<p>detect_cultural_terms()
+detect_disability_terms()
+detect_diversity_terms()
+detect_equity_terms()
+detect_justice_terms()
+detect_lifecourse_terms()
+detect_human_terms()
+detect_migration_terms()
+detect_minority_terms()
+detect_racialethnic_terms()
+detect_religious_terms()
+detect_sexgender_terms()
+detect_sexuality_terms()
+detect_socialclass_terms()</p>
 </div>
-<div id="degrees-titles-occupations" class="section level2">
-<h2><span class="header-section-number">5.2</span> Degrees, Titles &amp; Occupations</h2>
 </div>
-<div id="skills-certifications" class="section level2">
-<h2><span class="header-section-number">5.3</span> Skills &amp; Certifications</h2>
+<div id="geographic-analysis" class="section level2">
+<h2><span class="header-section-number">4.2</span> Geographic Analysis</h2>
+<div id="detect_countries" class="section level3">
+<h3><span class="header-section-number">4.2.1</span> detect_countries()</h3>
+<p>Sources for output parameters:</p>
+<ol style="list-style-type: decimal">
+<li><code>country</code>: Country names based on International Organization for Standardization with all punctuation removed to allow names to be more readable (<a href="https://www.iso.org/obp/ui/#home">ISO</a>).</li>
+<li><code>iso_2</code>: International Organization for Standardization’s two-digit country codes (<a href="https://www.iso.org/obp/ui/#home">ISO</a>). NOTE: The <a href="https://www.cia.gov/the-world-factbook/references/country-data-codes/">CIA World Factbook</a> uses a Geopolitical Entities and Codes (GEC) (Formerly FIPS 1PUB 10-4) schema that is now based on the ISO-2.</li>
+<li><code>iso_3</code>: International Organization for Standardization’s three-digit country codes (<a href="https://www.iso.org/obp/ui/#home">ISO</a>). NOTE: The <a href="https://www.cia.gov/the-world-factbook/references/country-data-codes/">CIA World Factbook</a> uses a Letter Codes for Geographical Entities Standardization Agreement (STANAG) that is based on the ISO-3.</li>
+<li><code>iso_numeric</code>: International Organization for Standardization’s three-digit numeric codes (<a href="https://www.iso.org/obp/ui/#home">ISO</a>) NOTE: The <a href="https://unstats.un.org/unsd/methodology/m49/">United Nations</a> also uses the ISO numeric code as their M49 area codes.</li>
+<li><code>iso_domain</code>: International Organization for Standardization’s three-digit numeric codes (<a href="https://www.iso.org/obp/ui/#home">ISO</a>)</li>
+<li><code>continent</code>: Continents that each country is located based onon International Organization for Standardization (<a href="https://www.iso.org/obp/ui/#home">ISO</a>).</li>
+<li><code>region</code>: Regions each country are in based on the <a href="https://unstats.un.org/unsd/methodology/m49/">United Nations’ M49 classification</a>.</li>
+<li><code>sub_region</code>: Subregions each country are in based on the <a href="https://unstats.un.org/unsd/methodology/m49/">United Nations’ M49 classification</a>.</li>
+<li><code>int_region</code>: Intermediary regions each country are in based on the <a href="https://unstats.un.org/unsd/methodology/m49/">United Nations’ M49 classification</a>.</li>
+<li><code>country_english</code>: Country names based verbatim on International Organization for Standardization (<a href="https://www.iso.org/obp/ui/#home">ISO</a>).</li>
+<li><code>country_chinese</code>: Country names in Chinese as translated by the <a href="https://unstats.un.org/unsd/methodology/m49/">United Nations</a>.<br />
+</li>
+<li><code>country_russian</code>: Country names in Russian as translated by the <a href="https://unstats.un.org/unsd/methodology/m49/">United Nations</a>.</li>
+<li><code>country_french</code>: Country names in French as translated by the <a href="https://unstats.un.org/unsd/methodology/m49/">United Nations</a>.</li>
+<li><code>country_spanish</code>: Country names in Spanish as translated by the <a href="https://unstats.un.org/unsd/methodology/m49/">United Nations</a>.</li>
+<li><code>country_arabic</code>: Country names in Arabic as translated by the <a href="https://unstats.un.org/unsd/methodology/m49/">United Nations</a>.</li>
+<li><code>latitude</code> and <code>longitude</code>: Averaged latitude and longitude taken from <a href="https://www.gapminder.org/data/geo/">Gapminder</a></li>
+</ol>
 </div>
-<div id="roles-relations" class="section level2">
-<h2><span class="header-section-number">5.4</span> Roles &amp; Relations</h2>
+<div id="detect_us_states" class="section level3">
+<h3><span class="header-section-number">4.2.2</span> detect_us_states()</h3>
+</div>
+</div>
+<div id="population-labeling" class="section level2">
+<h2><span class="header-section-number">4.3</span> Population Labeling</h2>
 
 </div>
 </div>
@@ -243,8 +264,8 @@ Documentation coming soon
           </div>
         </div>
       </div>
-<a href="diverstidy.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="tidyoss.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="cross.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="identidy.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -275,7 +296,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/USERNAME/REPO/edit/BRANCH/04-identidy.Rmd",
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/03-diverstidy.Rmd",
 "text": "Edit"
 },
 "history": {

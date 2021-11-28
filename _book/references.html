@@ -1,36 +1,36 @@
 <!DOCTYPE html>
-<html lang="" xml:lang="">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>References | tidysocial: Tools for Computational Text Anaylsis in the Social Sciences</title>
-  <meta name="description" content="<p>This is the documentation website for the tidysocial package. The package provides
+  <meta name="description" content="This is the documentation website for the tidysocial package. The package provides
 various functions to standardize messy text data for demographic, geographic, and
-organizational analysis.</p>" />
-  <meta name="generator" content="bookdown 0.23.5 and GitBook 2.6.7" />
+organizational analysis.<br />" />
+  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
 
   <meta property="og:title" content="References | tidysocial: Tools for Computational Text Anaylsis in the Social Sciences" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="<p>This is the documentation website for the tidysocial package. The package provides
+  <meta property="og:description" content="This is the documentation website for the tidysocial package. The package provides
 various functions to standardize messy text data for demographic, geographic, and
-organizational analysis.</p>" />
+organizational analysis.<br />" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="References | tidysocial: Tools for Computational Text Anaylsis in the Social Sciences" />
   
-  <meta name="twitter:description" content="<p>This is the documentation website for the tidysocial package. The package provides
+  <meta name="twitter:description" content="This is the documentation website for the tidysocial package. The package provides
 various functions to standardize messy text data for demographic, geographic, and
-organizational analysis.</p>" />
+organizational analysis.<br />" />
   
 
 <meta name="author" content="Brandon L. Kramer" />
 
 
-<meta name="date" content="2021-09-07" />
+<meta name="date" content="2021-11-24" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -39,8 +39,7 @@ organizational analysis.</p>" />
   
 <link rel="prev" href="notes.html"/>
 
-<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -56,15 +55,13 @@ organizational analysis.</p>" />
 
 
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
 
 
 <style type="text/css">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
@@ -73,16 +70,14 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
+    border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -91,9 +86,9 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  {  }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+a.sourceLine::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -125,7 +120,6 @@ code span.va { color: #19177c; } /* Variable */
 code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
-
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -165,13 +159,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.2.1" data-path="cross.html"><a href="cross.html#sector_detector"><i class="fa fa-check"></i><b>3.2.1</b> sector_detector()</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="diverstidy.html"><a href="diverstidy.html"><i class="fa fa-check"></i><b>4</b> diverstidy</a><ul>
-<li class="chapter" data-level="4.1" data-path="diverstidy.html"><a href="diverstidy.html#demographic-diversity"><i class="fa fa-check"></i><b>4.1</b> Demographic Diversity</a></li>
-<li class="chapter" data-level="4.2" data-path="diverstidy.html"><a href="diverstidy.html#geographic-analysis"><i class="fa fa-check"></i><b>4.2</b> Geographic Analysis</a><ul>
-<li class="chapter" data-level="4.2.1" data-path="diverstidy.html"><a href="diverstidy.html#detect_countries"><i class="fa fa-check"></i><b>4.2.1</b> detect_countries()</a></li>
-<li class="chapter" data-level="4.2.2" data-path="diverstidy.html"><a href="diverstidy.html#detect_us_states"><i class="fa fa-check"></i><b>4.2.2</b> detect_us_states()</a></li>
+<li class="chapter" data-level="4" data-path="the-diverstidy-package.html"><a href="the-diverstidy-package.html"><i class="fa fa-check"></i><b>4</b> The <code>diverstidy</code> package</a><ul>
+<li class="chapter" data-level="4.1" data-path="the-diverstidy-package.html"><a href="the-diverstidy-package.html#demographic-diversity"><i class="fa fa-check"></i><b>4.1</b> Demographic Diversity</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="the-diverstidy-package.html"><a href="the-diverstidy-package.html#detect_ancestry_terms"><i class="fa fa-check"></i><b>4.1.1</b> <code>detect_ancestry_terms()</code></a></li>
 </ul></li>
-<li class="chapter" data-level="4.3" data-path="diverstidy.html"><a href="diverstidy.html#population-labeling"><i class="fa fa-check"></i><b>4.3</b> Population Labeling</a></li>
+<li class="chapter" data-level="4.2" data-path="the-diverstidy-package.html"><a href="the-diverstidy-package.html#geographic-analysis"><i class="fa fa-check"></i><b>4.2</b> Geographic Analysis</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="the-diverstidy-package.html"><a href="the-diverstidy-package.html#detect_countries"><i class="fa fa-check"></i><b>4.2.1</b> detect_countries()</a></li>
+<li class="chapter" data-level="4.2.2" data-path="the-diverstidy-package.html"><a href="the-diverstidy-package.html#detect_us_states"><i class="fa fa-check"></i><b>4.2.2</b> detect_us_states()</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="the-diverstidy-package.html"><a href="the-diverstidy-package.html#population-labeling"><i class="fa fa-check"></i><b>4.3</b> Population Labeling</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="identidy.html"><a href="identidy.html"><i class="fa fa-check"></i><b>5</b> identidy</a><ul>
 <li class="chapter" data-level="5.1" data-path="identidy.html"><a href="identidy.html#awards-accolades"><i class="fa fa-check"></i><b>5.1</b> Awards &amp; Accolades</a></li>
@@ -221,6 +217,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -239,7 +236,6 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -260,10 +256,6 @@ gitbook.start({
 "text": null
 },
 "download": ["_main.pdf", "_main.epub"],
-"search": {
-"engine": "fuse",
-"options": null
-},
 "toc": {
 "collapse": "subsection",
 "scroll_highlight": true

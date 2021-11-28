@@ -1,26 +1,98 @@
-# diverstidy
+# diverstidy 
 
-## Demographic Diversity 
+<center>
+[insert image here]
+</center>
 
-detect_ancestry_terms()
-detect_cultural_terms()
-detect_disability_terms()
-detect_diversity_terms()
-detect_equity_terms()
-detect_justice_terms()
-detect_lifecourse_terms()
-detect_human_terms()
-detect_migration_terms()
-detect_minority_terms()
-detect_racialethnic_terms()
-detect_religious_terms()
-detect_sexgender_terms()
-detect_sexuality_terms()
-detect_socialclass_terms()
+## Demographic Analysis  
+
+### `detect_ancestry_terms()`
+
+```{r, eval=FALSE}
+detect_ancestry_terms(id, input)
+```
+
+### `detect_cultural_terms()`
+
+```{r, eval=FALSE}
+detect_cultural_terms(id, input)
+```
+
+### `detect_disability_terms()`
+
+```{r, eval=FALSE}
+detect_disability_terms(id, input)
+```
+
+### `detect_diversity_terms()`
+
+```{r, eval=FALSE}
+detect_diversity_terms(id, input)
+```
+
+### `detect_equity_terms()`
+
+```{r, eval=FALSE}
+detect_equity_terms(id, input)
+```
+
+### `detect_justice_terms()`
+
+```{r, eval=FALSE}
+detect_justice_terms(id, input)
+```
+
+### `detect_lifecourse_terms()`
+
+```{r, eval=FALSE}
+detect_lifecourse_terms(id, input)
+```
+
+### `detect_migration_terms()`
+
+```{r, eval=FALSE}
+detect_migration_terms(id, input)
+```
+
+### `detect_minority_terms()`
+
+```{r, eval=FALSE}
+detect_minority_terms(id, input)
+```
+
+### `detect_racialethnic_terms()`
+
+```{r, eval=FALSE}
+detect_racialethnic_terms(id, input)
+```
+
+### `detect_religious_terms()`
+
+```{r, eval=FALSE}
+detect_religious_terms(id, input)
+```
+
+### `detect_sexgender_terms()`
+
+```{r, eval=FALSE}
+detect_sexgender_terms(id, input)
+```
+
+### `detect_sexuality_terms()`
+
+```{r, eval=FALSE}
+detect_sexuality_terms(id, input)
+```
+
+### `detect_socialclass_terms()`
+
+```{r, eval=FALSE}
+detect_socialclass_terms(id, input)
+```
 
 ## Geographic Analysis 
 
-### detect_countries() 
+### `detect_countries()` 
 
 Sources for output parameters:
 
@@ -41,9 +113,13 @@ Sources for output parameters:
 15. `country_arabic`: Country names in Arabic as translated by the [United Nations](https://unstats.un.org/unsd/methodology/m49/). 
 16. `latitude` and `longitude`: Averaged latitude and longitude taken from [Gapminder](https://www.gapminder.org/data/geo/)
 
-### detect_us_states() 
-
 ## Population Labeling 
+
+### `detect_human_terms()`
+
+```{r, eval=FALSE}
+detect_human_terms(id, input)
+```
 
 
 

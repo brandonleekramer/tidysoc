@@ -1,20 +1,107 @@
-# tidyorgs {#cross}
+# tidyorgs 
 
-
+<center>
+[insert image here]
+</center>
 
 ## Organizational Analysis
 
-### detect_academic()
+### `detect_orgs()`
 
-### detect_business()
+```{r, eval=FALSE}
+detect_orgs(data, id, input, output, 
+            email = FALSE, country = FALSE, 
+            parent_org = FALSE, org_type = FALSE)
+```
 
-### detect_government()
+The `detect_orgs()` function aggregates the detection and standardization of the academic, business, government, nonprofit, and household sectors. Note that running this function streamlines the workflow of running all of the five sector functions, which will come at the computational cost of trying to match across millions of organizations rather than the thousands within each sector. 
 
-### detect_nonprofit()
+### `detect_academic()`
 
-### detect_funders()
+```{r, eval=FALSE}
+detect_academic(data, id, input, output, 
+                email = FALSE, country = FALSE, 
+                parent_org = FALSE, org_type = FALSE)
+```
 
-## Sector Classification
+The `detect_academic()` function detects and standardizes academic organizations. This function uses `funnel_match()` to pluck out word sequences from `input` column without any pre-processing steps and match these word sequences to a curated dictionary of around 13,500 academic institutions. The end result is a standardized `output` column that minimizes multiple forms of text variants to a formalized institution name. Let's use the University of Wisconsin-Madison as an example. As you can see in the table, the `input` column has multiple forms of the school name that are all standardized into one formal output name. This reduction of complexity is intended to help researchers with various tasks such as standardizing noise in survey data, obtaining accurate counts, and joining datasets where academic institutions have different key value names. 
 
-### sector_detector() 
+```{r, echo=FALSE}
+table <- data.frame(id = c(1, 2, 3, 4, 5, 6, 7, 8),
+                    input = c("uwisconsin",
+                              "University of Wisconsin Madison",
+                              "University of Wisconsin-Madison", 
+                              "univ of wisconsin-madision",
+                              "university of wisconsin green bay",
+                              "uw stevens point",
+                              "UW Stout",
+                              "univ. of wisconsin"),
+                    output = c("University of Wisconsin-Madison",
+                               "University of Wisconsin-Madison",
+                               "University of Wisconsin-Madison",
+                               "University of Wisconsin-Madison",
+                               "University of Wisconsin-Green Bay",
+                               "University of Wisconsin-Stevens Point",
+                               "University of Wisconsin-Stout",
+                               "University of Wisconsin-Madison"))
+table
+```
+
+To get messy text data to become standardized, we curated a dictionary of 13,500 academic institutions deriving from two public data sources. The first is the [Hipo Labs University Domain](https://github.com/Hipo/university-domains-list) that has been curated by more than 110 contributors over the course of several years in their GitHub repo. The second dataset is the [Integrated Postsecondary Education Data System](https://nces.ed.gov/ipeds/find-your-college) (IPEDS) dataset that is published via the [US National Center for Education Statistics](https://nces.ed.gov/). While the IPEDs data helps to make the function more comprehenisve in terms of capturing smaller colleagues throughout the US, the Hipo Labs data helps to de-bias the function to detect universities outside of the US. 
+
+While we worked to mitigate this bias, we are aware of at least two forms of bias that still exist in the `detect_academic()` function. For one, we have not incorporated comprehensive datasets from each country, which means we end up under-estimating academic institutions based outside of the US. On the other hand, even if we did have those institututions included in this function, they would often fail to be matched because they are not listed in English. Most of the institutions included in the this function are listed in English, but in some cases we have tried to improve the accuracy of prominent non-US schools by adding in French, Spanish, English and Chinese word sequences to help catch those institutions. Eventually, we hope to minimize this bias by generating more contributions from users of this package from elsewhere in the world.
+
+The `detect_academic()` currently includes four additional parameters that users may find helpful:
+
+**`email`**: While the default function detects patterns in uncleaned character vectors, the `email` parameter matches academic institutions based on their email domains. If email data is available, this parameter can be set to `TRUE` to maximize the classification accuracy. When testing this function on GitHub user data, we found the email parameter to be almost as important as the default function. 
+
+**`country`**: Unsurprisingly, this parameter returns the `country` that the academic institution is located. Note that in cases where a university has multiple campuses, such as New York University and NYU Abu Dhabi, these campuses are separated into two separate entities with their countries specified in each case. For those intested, this parameter can also potentially be used to infer users' location when additional geographic information is absent. 
+
+**`parent_org`**: As mentioned earlier, some schools have multiple campuses and each of those campuses is included in this function as a distinct entity. Yet, policymakers and researchers may also be interested in analyzing entire school systems as one entity. By changing the `parent_org` parameter to `TRUE` researchers can obtain both a standardized version of the specific school campus as well as the school system that is embedded within. For example, the University of Wisconsin example above would return the table printed above in addition to a third column where all entities are connected to the "University of Wisconsin". As of November 2021, school systems are available for all US schools and for select universities outside of the United States such as the Indian Institutes of Technology.
+
+**`org_type`**: We have worked with policymakers that are interested analyzing universities based on their legal standing as public, private non-profit, or private-for-profit schools. Changing the `org_type` parameter to `TRUE` will return an additional column that provides this data when available. However, because this data derives from the IPEDS data, these outcomes are generally only available for US institutions. 
+
+As part of the `tidyorgs` package, you can also access to the raw data used to match institutions by calling `data(academic_orgs)`. This dataset has additional features for institutions listed in the IPEDS data, including address, city, state, zip code, FIPS code, latitude, longitude, IPEDS Unit ID, OPE ID, EIN ID, DUNS ID, and website URL.
+
+<br>
+
+### `detect_business()`
+
+```{r, eval=FALSE}
+detect_academic(data, id, input, output, 
+                email = FALSE, country = FALSE, 
+                parent_org = FALSE, org_type = FALSE)
+```
+
+### `detect_government()`
+
+```{r, eval=FALSE}
+detect_academic(data, id, input, output, 
+                email = FALSE, country = FALSE, 
+                parent_org = FALSE, org_type = FALSE)
+```
+
+### `detect_nonprofit()`
+
+```{r, eval=FALSE}
+detect_academic(data, id, input, output, 
+                email = FALSE, country = FALSE, 
+                parent_org = FALSE, org_type = FALSE)
+```
+
+### `detect_household()`
+
+```{r, eval=FALSE}
+detect_academic(data, id, input, output, 
+                email = FALSE, country = FALSE, 
+                parent_org = FALSE, org_type = FALSE)
+```
+
+]### `detect_funders()`
+
+```{r, eval=FALSE}
+detect_academic(data, id, input, output, 
+                email = FALSE, country = FALSE, 
+                parent_org = FALSE, org_type = FALSE)
+```
 

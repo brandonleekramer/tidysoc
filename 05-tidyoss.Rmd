@@ -1,4 +1,12 @@
-# tidyoss 
+# tidyoss
+
+<center>
+[insert image here]
+
+Documentation coming soon
+</center>
+
+
 
 ## Application Software
 
