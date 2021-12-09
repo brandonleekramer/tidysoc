@@ -89,6 +89,33 @@ detect_academic(data, id, input, output,
                 parent_org = FALSE, org_type = FALSE)
 ```
 
+The `detect_nonprofit()` function detects and standardizes non-profit organizations. This function uses `funnel_match()` to extract word sequences from a defined `input` column without any pre-processing steps and then matches these word sequences to a curated dictionary of up to *XXXXX* non-profit institutions. The end result is a standardized `output` column that minimizes multiple forms of text variants to a formalized institution name. **Let's use the University of Wisconsin-Madison as an example. As you can see in the table, the `input` column has multiple forms of the school name that are all standardized into one formal output name. This reduction of complexity is intended to help researchers with various tasks such as standardizing noise in survey data, obtaining accurate counts, and joining datasets where academic institutions have different key value names.** 
+
+```{r, echo=FALSE}
+table <- data.frame(id = c(1, 2, 3, 4, 5, 6, 7, 8),
+                    input = c("uwisconsin",
+                              "University of Wisconsin Madison",
+                              "University of Wisconsin-Madison", 
+                              "univ of wisconsin-madision",
+                              "university of wisconsin green bay",
+                              "uw stevens point",
+                              "UW Stout",
+                              "univ. of wisconsin"),
+                    output = c("University of Wisconsin-Madison",
+                               "University of Wisconsin-Madison",
+                               "University of Wisconsin-Madison",
+                               "University of Wisconsin-Madison",
+                               "University of Wisconsin-Green Bay",
+                               "University of Wisconsin-Stevens Point",
+                               "University of Wisconsin-Stout",
+                               "University of Wisconsin-Madison"))
+table
+```
+
+The `detect_academic()` currently includes **n** additional parameters that users may find helpful:
+
+**`parameter_1`**: 
+
 ### `detect_household()`
 
 ```{r, eval=FALSE}
